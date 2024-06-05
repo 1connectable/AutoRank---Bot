@@ -15,6 +15,8 @@ client.once('ready', () => {
 client.on('messageCreate', (message) => {
     
     if (message.mentions.has(client.user)) {
+
+      if (message.channel.id !== config.channel) return;
         
       if (message.member.displayName && message.member.displayName.includes(config.tag)) {
 
