@@ -1,5 +1,6 @@
 {
 "token": "TOKEN_DU_BOT",
 "role": "ID_DU_ROLE",
-"tag": "TAG_DE_VOTRE_TEAM"
+"tag": "TAG_DE_VOTRE_TEAM",
+"channel": "CHANNEL_AUTO_RANK"
 }
