@@ -24,15 +24,11 @@ client.on('messageCreate', (message) => {
 
             if (role) {
 
-                message.member.roles.add(role)
-
-                    .then(() => {
+                message.member.roles.add(role).then(() => {
 
                         message.channel.send(`<@${message.author.id}>, vous avez maintenant le rôle ${role.name}!`);
 
-                    })
-
-                    .catch((error) => {
+                    }).catch((error) => {
 
                         console.log(`Erreur : ${error}`);
 
